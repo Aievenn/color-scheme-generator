@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- FONT -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,400;0,500;1,400;1,500&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+  <!-- CSS STYLESHEET -->
+  <link rel="stylesheet" href="/index.css">
+  <title>Color Scheme Generator</title>
+</head>
+<body>
+  <div class="color-selection">
+    <div class="form-container">
+    <form id="color-form">
+       <input type="color" name="seed-color" id="seed-color">
+       <select id="scheme">
+          <option value="monochrome">Monochrome</option>
+          <option value="monochrome-dark">Monochrome-dark</option>
+          <option value="monochrome-light">Monochrome-light</option>
+          <option value="analogic">Analogic</option>
+          <option value="complement">Complement</option>
+          <option value="analogic-complement">Analogic-complement</option>
+          <option value="triad">Triad</option>
+          <option value="quad">Quad</option>
+        </select>
+        <button id="color-gen-btn">Get your color scheme!</button>
+    </form>
+    </div>
+    <div id="scheme-area">
+      
+    </div>
+   <div id="copy-popup" class="hidden">
+      <p>Copied to clipboard!</p>
+    </div>
+      
+  </div>
+  <!-- JS -->
+  <script src="/index.js"> </script>
+</body>
+</html>
